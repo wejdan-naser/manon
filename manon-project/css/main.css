@@ -1,0 +1,121 @@
+/*////////////////////////////////////*/
+/*////////// the colors used/////////*/
+
+:root{
+    --body: #BFB2AA
+    --white: #eee
+    --brouwn: #8C6C5A
+    --Darkbrouwn:#593A28
+    --lightbrouwn:#sA68A7B
+}
+
+/*////////////////////////////////////*/
+
+
+/*////////////////////////////////////*/
+/*////////////the font used///////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/*font-family: 'Monoton', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+/*font-family: 'Montez', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+/*font-family: 'Keania One', cursive;*/
+
+/*////////////////////////////////////*/
+
+/*////////////////////////////////////*/
+/*////////////for all page ///////////*/
+
+body{
+    background-color: #BFB2AA;
+}
+img {
+    width: 69px;
+}
+
+/*////////////////////////////////////*/
+
+/*////////////////////////////////////*/
+/*//////////////header///////////////*/
+
+header .content {
+    display: flex;
+    padding: 15px;
+    align-content: center;
+}
+img.logo {
+    width: 118px;
+}
+#nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list-items {
+    margin-left: 21px;
+    color: #593A28;
+    font-family: 'Montez', cursive;
+    font-size: 15px;
+}
+.nav-logo {
+    padding: 8px 0px 0px 4px;
+}
+img.line {
+    width: 14px;
+    height: 3px;
+    margin: 2px;
+    display: flex;
+}  
+/*burgar*/
+button.nav-purger {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+/*
+    width: 4%;
+    display: flex;
+    justify-content: center;
+*/}
+/*.purger {    
+    display: block;
+    position: relative;
+    background: #593A28;
+    width: 100%;
+    height: 3px;
+    align-self: center;
+
+}
+.purger ::after,
+.purger ::before {
+    content: "";
+    position: absolute;
+    background: #593A28;
+    width: 100%;
+    height: 100%;
+}
+
+.purger ::after{
+    top: 5px;
+}
+ .purger ::before{
+    top: -5px;
+}*/
+/*////////////////////////////////////*/
+
+/*////////////////////////////////////*/
+/*///////////////hero////////////////*/
+.hero .content{
+    background-image: url(../img/hero\ photo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texthero{
+    font-family: 'Monoton', fantasy;
+    font-size: 57px;
+    color: #8C6C5A;
+}
