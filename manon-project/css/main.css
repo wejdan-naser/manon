@@ -15,13 +15,16 @@
 /*////////////////////////////////////*/
 /*////////////the font used///////////*/
 
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-/*font-family: 'Monoton', cursive;*/
+/*@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+font-family: 'Monoton', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
 /*font-family: 'Montez', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
 /*font-family: 'Keania One', cursive;*/
-
+@font-face {
+    font-family:'Monoton', cursive ;
+    src: url('../font/Caveat-VariableFont_wght.ttf');
+}
 /*////////////////////////////////////*/
 
 /*////////////////////////////////////*/
@@ -71,35 +74,33 @@ button.nav-purger {
     margin-left: auto;
     background: transparent;
     border: none;
-/*
-    width: 4%;
-    display: flex;
-    justify-content: center;
-*/}
-/*.purger {    
+    padding:5px;    
+}
+    
+.purger {    
     display: block;
     position: relative;
     background: #593A28;
-    width: 100%;
-    height: 3px;
-    align-self: center;
+    width: 20px;
+    height: 1px;
 
 }
-.purger ::after,
-.purger ::before {
+.purger::after,
+.purger::before {
     content: "";
     position: absolute;
     background: #593A28;
     width: 100%;
     height: 100%;
+    display: block;
 }
 
-.purger ::after{
+.purger::after{
     top: 5px;
 }
- .purger ::before{
+ .purger::before{
     top: -5px;
-}*/
+}
 /*////////////////////////////////////*/
 
 /*////////////////////////////////////*/
@@ -118,4 +119,229 @@ button.nav-purger {
     font-family: 'Monoton', fantasy;
     font-size: 57px;
     color: #8C6C5A;
+}
+
+
+
+/*////////////////////////////////////*/
+/*//////////////about-us//////////////*/
+.about-us {
+    display: flex;
+    width: 100%;
+    margin-bottom: 230px;
+    margin-top: 76px;
+}
+.aboutus-text {
+   /* width: 50%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.line-up , .line-down{
+    background: white;
+    height: 4px;
+    margin-left: 34%;
+    margin-right: 11%;
+}
+
+.line-up{
+    width: 59%;
+    margin-top: 97px;
+}
+.about-us p {
+    max-width: 78%;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 22%;
+}
+p.long-p {
+    margin-bottom: 20px;
+    color: #593A28;
+    font-family: 'Keania One', cursive;
+    font-size: 23px;
+}
+.line-down {
+    width: 50%;
+}
+
+.photo-section {
+    width: 50%;
+    position: relative;
+}
+img.team-photo {
+    position: absolute;
+    width: 210px;
+    border-radius: 65px;
+    top: 95px;
+    left: 32px;
+    height: 300px;
+}
+.withe{
+    position: absolute;
+    width: 140px;
+    background: white;
+    height: 141px;
+    border-radius: 50px;
+    transform: rotate(40deg);
+}
+.dark{
+    background: #8C6C5A;    
+    position: absolute;
+    width: 140px;
+    height: 141px;
+    border-radius: 50px;
+    transform: rotate(40deg);
+}
+.ligth{
+    position: absolute;
+    width: 140px;
+    background: #A68A7B;
+    height: 141px;
+    border-radius: 50px;
+    transform: rotate(40deg);
+}
+.back7 {
+    top: 299px;
+    left: 33px;
+}
+.back6{
+    top: 300px;
+    left: 175px;
+    height: 103px;
+}
+.back5 {
+    top: 102px;
+    left: -39px;
+    height: 102px;
+}
+.back4 {
+    top: 301px;
+    left: 99px;
+}
+.back3 {
+    top: 191px;
+    left: -35px;
+}
+.back2 {
+    top: 132px;
+    left: 170px;
+}
+.back1 {
+    top: 50px;
+    left: 39px;
+}
+.back10.ligth {
+    top: 267px;
+    left: -28px;
+}
+.back9.ligth {
+    top: 209px;
+    left: 180px;
+}
+.back8.ligth {
+    top: 47px;
+    left: 115px;
+}
+
+/*////////////////////////////////////*/
+/*//////////////morephoto/////////////*/
+section.morephoto {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.morephoto a {
+    text-decoration: none;
+}
+.morephoto p:hover {
+    color:#593A28;
+}
+.morephoto img {
+    width: 100%;
+}
+.morephoto p {
+    margin-top: -246px;
+    font-size: 58px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    color: white;
+    margin-top: -60%;
+    margin-bottom: 37%;
+}
+/*////////////////////////////////////*/
+/*//////////////subscribe/////////////*/
+section.subscribe {
+    width: 100%;
+    background-image: url(../img/backgrond\ email.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.subcontent {
+    background-color: white;
+    width: 53%;
+    height: 367px;
+    margin: 140px 3px;
+    border: 10px solid #795548;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.subcontent p {
+    font-size: 28px;
+    margin-bottom: 79px;
+    color: #795548;
+}
+input {
+    background-color: #8C6C5A;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+::placeholder{
+    color: white;
+    font-family: 'Monoton', cursive; 
+}
+button.submit {
+    border: 6px solid #8C6C5A;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+}
+/*////////////////////////////////////*/
+/*///////////////footer///////////////*/
+footer .content {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+footer ul {
+    display: flex;
+}
+footer li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 46px;
+    color: #593a28;
+    align-items: center;
+}
+footer .nav-logo{
+    padding: 2px 0px 0px 4px;
+}
+img {
+    width: 22px;
 }
