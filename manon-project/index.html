@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>home</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/reset.css">
 </head>
@@ -22,12 +22,12 @@
         <img class="line-r line" src="./img/logo line 2 r.png" alt="line">
         <img class="line-r line" src="./img/logo line 2 r.png" alt="line">
       </div>
-      <ul id="nav-list">
-        <li class="nav-list-items"><a href="/#index"></a>home</li>
-        <li class="nav-list-items"><a href="/#index"></a>pregnant photos</li>
-        <li class="nav-list-items"><a href="/#index"></a>widing photos</li>
+      <ul class="hide" id="nav-list">
+        <li class="nav-list-items"><a  href="#">home</a></li>
+        <li class="nav-list-items"><a  href="./pregnantPicture.html">pregnant photos</a></li>
+        <li class="nav-list-items"><a  href="/#index">widing photos</a></li>
       </ul>
-      <button class="nav-purger">
+      <button onclick="thelist()" aria-label="for purger" type="button" class="nav-purger">
         <div class="purger"></div>
       </button>
     </div>
@@ -35,7 +35,6 @@
   <!----------------------------hero------------------------------->
   <section class="hero">
     <div class="content">
-      <!-- <img class="hero-photo" src="./img/hero photo.jpg" alt="studio-photo"> احذقيهه بعدين                          -->
       <p class="texthero">we are here for you </p>
     </div>
   </section>
@@ -73,7 +72,7 @@
   <!-----------------------------morephoto--------------------------------->
   <section class="morephoto">
     <div class="pregnant-photos">
-      <a href="#"><img src="./img/pregnant Picture.png" alt="pregnant Picture">
+      <a href="./pregnantPicture.html"><img src="./img/pregnant Picture.png" alt="pregnant Picture">
         <p>pregnant</p>
       </a>
     </div>
@@ -83,15 +82,16 @@
       </a>
     </div>
   </section>
-  <!---------------------------<p class="name">name</p>
-      <p class="email">xxxxx@xxxxx.xxx</p>------------------------------------------------>
+  <!---------------------------------------------------------------------->
   <section class="subscribe">
     <div class="subcontent">
       <p>if you want our exclusive discounts and updates,
         all you have to do is subscrib our newsletter</p>
-      <input type="email" placeholder="xxxxx@xxxxx.xxx">
-      <input type="text" placeholder="name">
-      <button type="submit" class="submit">submit</button>
+      <form>
+        <input type="email" placeholder="xxxxx@xxxxx.xxx">
+        <input type="text" placeholder="name">
+        <button type="submit" class="submit">submit</button>
+      </form>
     </div>
   </section>
   <!--------------------------------------------------------------------------->
@@ -113,6 +113,7 @@
         <li><img class="twitter" src="./img/twitter.png" alt="twitter">@manon</li>
       </ul>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
