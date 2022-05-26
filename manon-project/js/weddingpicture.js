@@ -1,34 +1,42 @@
-let minimg = document.querySelector('#imggallre');
+let mainimg = document.querySelector('#imggallre');
 let arrowleft = document.querySelector('.left');
 let arrowrigth = document.querySelector('.right');
+let downpotos = document.querySelectorAll('.downphotos'); 
+let actives = document.getElementsByClassName('actives');
 
-let arrayphotos =  [
-    "./img/widdingpicture/img1.jpg",
-    "./img/widdingpicture/img2.jpg",
-    "./img/widdingpicture/img3.jpg",
-    "./img/widdingpicture/img4.jpg",
-    "./img/widdingpicture/img5.jpg",
-    "./img/widdingpicture/img6.jpg",
-    "./img/widdingpicture/img7.jpg",
-    "./img/widdingpicture/img8.jpg",
-
-];
-let indexphoto = 1;;
-
-function nextphoto()
-{
-    if(indexphoto < arrayphotos.length){
-        minimg.setAttribute('src',arrayphotos[indexphoto]);
-        indexphoto++;
-        if(indexphoto > arrayphotos.length){indexphoto = 0;}
-    }  
-    
-};
-function beforephoto()
-{        
-    if(indexphoto > 0){
-         indexphoto--;  
-         minimg.setAttribute('src',arrayphotos[indexphoto]);
-    }else if(indexphoto < arrayphotos.length){indexphoto = 0;}
+/* for remove and add class */
+for(let i = 0 ; i < downpotos.length ; i++)
+{   
    
+
+    downpotos[i].onmousemove = function()
+    { 
+         for(let j = 0 ; j < downpotos.length ; j++){
+         downpotos[j].classList.remove('actives');
+    } 
+        
+        if(downpotos[i].classList.contains('actives') === false){
+            this.classList.add('actives');
+        }else 
+        {      
+           this.classList.remove('actives');
+        }
+        mainimg.src = this.src;
+    }
+
 };
+
+
+//the downe arrow
+
+let alldwnphotos = document.querySelector('.alldwnphotos');
+let downlefts = document.querySelector('.downleft');
+let downright = document.querySelector('.downright');
+  
+
+downlefts.addEventListener('click',function(){
+    alldwnphotos.scrollLeft -=180;
+});
+downright.addEventListener('click',function(){
+    alldwnphotos.scrollLeft +=180;
+});

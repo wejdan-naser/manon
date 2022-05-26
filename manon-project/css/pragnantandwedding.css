@@ -1,0 +1,93 @@
+
+/*///////////////////////////////////////////////////*/
+
+section.starpage {
+    margin-top: 18%;
+}
+
+.itmeforline {
+    width: 100%;
+    height: 2px;
+    background: #593A28;
+    margin-bottom: 3%;
+}
+.backgroundforphotos{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: -10%;
+}
+.mainphotoarrow{
+   display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    margin-top: -29%;
+    width: 100%;
+}
+
+div#showphotos {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+#imggallre {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.right {
+    transform: rotate(0deg);
+}
+  
+.left {
+    transform: rotate(180deg);
+}
+img.arrow {
+    width: 4%;
+    margin: auto;
+    cursor: pointer;
+}
+.imgs{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.imgs:hover{
+    opacity: 1;
+}
+.actives{
+    opacity: 1;
+}
+
+/*//////*/
+.alldwnphotos {
+    display: flex;
+    justify-content: center;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+img.downphotos{
+    width: auto;
+    margin: auto;
+    height: 97px;
+}
+.downphotos{
+    max-width: 55%;
+}
+
+.contenerdown{
+      display: flex;
+    justify-content: center;
+    margin-top: 13%;
+    max-width: 51%;
+    margin-left: auto;
+    margin-right: auto;
+}
